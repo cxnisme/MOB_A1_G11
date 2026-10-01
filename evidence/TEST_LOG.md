@@ -14,7 +14,7 @@ Date recorded: 2026-10-01
 
 | Check | Result | Notes |
 |---|---|---|
-| `npm run lint` | PASS | Expo flat config; no lint errors after fixing the Dock animation value initialization. |
+| `npm run lint` | PASS (temporary setup) | Expo's lint config caught and helped fix the Dock animation value initialization. ESLint packages/config were removed afterward at the user's request; lint is not a retained project command. |
 | `npx tsc --noEmit` | PASS | No TypeScript diagnostics. |
 | `npx expo-doctor` | PASS | 21/21 checks passed. |
 | `npx expo export --platform android` | PASS | Android JavaScript bundle exported; Metro bundled 1,037 modules. This is not a signed native install package. |

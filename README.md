@@ -44,13 +44,12 @@ Open Expo Go on Android and scan the terminal QR code. The phone and development
 ## Automated checks
 
 ```powershell
-npm run lint
 npx tsc --noEmit
 npx expo-doctor
 npx expo export --platform android
 ```
 
-Results from the current Windows environment are recorded in [evidence/TEST_LOG.md](evidence/TEST_LOG.md). Android export verifies that the JavaScript bundle can be produced; it is not a signed APK or Play Store release.
+TypeScript, Expo Doctor, and Android export results from the current Windows environment are recorded in [evidence/TEST_LOG.md](evidence/TEST_LOG.md). A temporary lint setup was used during development and then removed; lint tooling is not included in this project. Android export verifies that the JavaScript bundle can be produced; it is not a signed APK or Play Store release.
 
 ## Validation rules
 
